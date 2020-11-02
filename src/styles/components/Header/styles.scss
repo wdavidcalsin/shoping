@@ -1,0 +1,95 @@
+.header{
+    background-color: rgb(4, 30, 66);
+    .header__tabs{
+
+        display: flex;
+
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px;
+            font-weight: 600;
+            font-size: 13px;
+
+            &.select__tab{
+                border-bottom: 2px solid orange;
+            }
+        }
+    }
+
+    .header__nav{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        .bars__logo{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            a{
+                img{
+                    width: 100px;       
+                }
+            }
+            &>svg{
+                color: white;
+                padding: 0 20px;
+                font-size: 30px;
+            }
+        }
+
+        .search__content{
+            .search__item{
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                overflow: hidden;
+                svg{
+                    padding: 5px 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                input{
+                    outline: none;
+                    border-radius: 0;
+                    border: none;
+                    // padding: 0px 20px;
+                    width: 500px;
+                    font-size: 14px;
+                }
+
+                .search__icon{
+                    background-color: orange;
+                    height: 100%;
+                }
+            }
+        }
+
+        .nav_right{
+            display: flex;
+            align-items: center;
+
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                padding: 0 10px;
+
+                svg{
+                    font-weight: 300;
+                    padding:0 5px;
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
