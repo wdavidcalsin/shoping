@@ -1,0 +1,80 @@
+.footer{
+    .footer__item{
+        .footer__top{
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            @media (max-width: 770px) {
+                flex-direction: column;
+            }
+
+            .inputs{
+                flex: 60%;
+                position: relative;
+                width: auto;
+                
+                form{
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+
+                    input{
+                        height: 15px;   
+                    }
+                    button{
+                        height: 52px;
+                        color: white;
+                        background-color: black;
+                        border: none;
+                        border-radius: 0 2px 2px 0px ;
+                        width: 127px;
+                        flex-shrink: 0;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .links__social{
+                flex: 40%;
+                display: flex;
+                align-items: center;
+
+                .icons__social{
+                    flex: 1;
+                    display: flex;
+                    // align-items: center;
+
+                    a{
+                        padding: 0 0.7rem;
+                        color: black;
+                        svg{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                .icon__downloadApps{
+                    flex: 1;
+
+                    a{
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        color: black;
+
+                        svg{
+                            padding: 0 0.5rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .footr__section{
+            background-color: orange;
+        }
+    }
+}

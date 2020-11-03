@@ -8,7 +8,7 @@
             text-decoration: none;
             color: white;
             padding: 10px 30px;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 13px;
 
             &.select__tab{
@@ -31,10 +31,13 @@
                     width: 100px;       
                 }
             }
-            &>svg{
-                color: white;
-                padding: 0 20px;
-                font-size: 30px;
+            button{
+                
+                svg{
+                    color: white;
+                    padding: 0 20px;
+                    font-size: 30px;
+                }
             }
         }
 
