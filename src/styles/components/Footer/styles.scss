@@ -96,7 +96,13 @@
             display: flex;
             font-size: 16px;
             justify-content: space-evenly;
-            padding: calc(3em) 0;
+            padding:3em 0;
+            @media (max-width: 550px) {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding:2em 0;
+            }
 
             .item__footSec{
                 h3{
@@ -107,6 +113,9 @@
                 ul{
                     padding: 0;
                     list-style-type: none;
+                    @media (max-width: 550px) {
+                        display: none;
+                    }
                     li{
                         a{
                             text-decoration: none;

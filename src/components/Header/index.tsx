@@ -42,7 +42,7 @@ function Header(){
                     
                     <div className="search__content">
                         <div className="search__item">
-                            <ArrowDropDownIcon />
+                            <ArrowDropDownIcon className="show__more"/>
                             <input type="text" placeholder="Search Walmart.com"/>
                             <div  className="search__icon">
                                 <SearchIcon/>

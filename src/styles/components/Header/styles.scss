@@ -76,6 +76,13 @@
                     width: 90%;
                     
                 }
+
+                .show__more{
+                    @media (max-width: 400px) {
+                        display: none;
+                    }
+                }
+
                 svg{
                     padding: 5px 10px;
                     display: flex;
