@@ -1,4 +1,5 @@
 .footer{
+    font-size: 16px;
     .footer__item{
         .footer__top{
             display: flex;
@@ -8,17 +9,28 @@
             @media (max-width: 770px) {
                 flex-direction: column;
             }
-
+            
             .inputs{
                 flex: 60%;
                 position: relative;
                 width: auto;
+                @media (max-width: 770px) {
+                    width: 100%;
+                    flex: 100%;
+                    // background-color: orange;
+                }
                 
                 form{
                     width: 80%;
                     display: flex;
                     align-items: center;
-
+                    @media (max-width: 770px) {
+                        width: 100%;
+                        // width: 100%;
+                        // flex: 100%;
+                        // background-color: orange;
+                    }
+                    
                     input{
                         height: 15px;   
                     }
@@ -40,14 +52,21 @@
                 flex: 40%;
                 display: flex;
                 align-items: center;
+                font-size: 16px;
+                justify-content: space-between;
+                @media (max-width: 770px) {
+                    justify-content: space-around;
+                    padding-top: 40px;
+                    width: 100%;
+                }
 
                 .icons__social{
-                    flex: 1;
+                    // flex: 1;
                     display: flex;
                     // align-items: center;
 
                     a{
-                        padding: 0 0.7rem;
+                        padding: 0 calc(1vw);
                         color: black;
                         svg{
                             font-size: 1.3rem;
@@ -56,7 +75,7 @@
                 }
 
                 .icon__downloadApps{
-                    flex: 1;
+                    // flex: 1;
 
                     a{
                         display: flex;
@@ -73,8 +92,64 @@
             }
         }
 
-        .footr__section{
-            background-color: orange;
+        .footer__section{
+            display: flex;
+            font-size: 16px;
+            justify-content: space-evenly;
+            padding: calc(3em) 0;
+
+            .item__footSec{
+                h3{
+                    font-size: calc(0.8em);
+                    font-weight: 600;
+                    color: rgb(29, 29, 29);
+                }
+                ul{
+                    padding: 0;
+                    list-style-type: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-size: calc(0.7em);
+                            color: rgb(29, 29, 29);
+                            padding: calc(0.5vw) 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__bottom{
+            .brands__logo{
+                display: flex;
+                justify-content: space-around;
+                flex-flow: row wrap;
+                padding-bottom: 0.8em;
+                a{
+                    padding: 0 10px;
+                    img{
+                        width:calc(80px);
+                    }
+                }
+            }
+
+            .terms__use{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                padding: 0.8em 0;
+                border-top: 1px solid rgb(223, 223, 223);
+                span{
+                    color: rgb(22, 22, 22);
+                    font-size: 0.7em;
+                }
+                p{
+                    color: rgb(61, 61, 61);
+                    font-size: 0.6em;
+                }
+            }
         }
     }
 }

@@ -1,54 +1,81 @@
 .header{
     background-color: rgb(4, 30, 66);
-    .header__tabs{
+    transition: all .5s;
+    z-index: 10;
 
+    
+    .header__tabs{
+        transition: all 2s;
+        
         display: flex;
 
+        @media (max-width: 730px) {
+            justify-content: space-around;
+        }
+        
         a{
             text-decoration: none;
             color: white;
             padding: 10px 30px;
             font-weight: 400;
             font-size: 13px;
-
+            
             &.select__tab{
                 border-bottom: 2px solid orange;
             }
         }
     }
-
+    
     .header__nav{
+        transition: all 2s;
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: space-between;
+
         .bars__logo{
             padding: 20px 0;
             display: flex;
             align-items: center;
+
             a{
                 img{
-                    width: 100px;       
+                    width: 100px;   
+                    display: block; 
+                    
+                    @media (max-width: 500px) {
+                        display: none;
+                    }
                 }
             }
+
             button{
                 
                 svg{
                     color: white;
-                    padding: 0 20px;
                     font-size: 30px;
                 }
             }
         }
 
         .search__content{
+            width: 100%;
+
             .search__item{
                 background-color: white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                align-content: center;
                 border-radius: 30px;
+                width: 500px;
+                max-width: auto;
                 overflow: hidden;
+                margin: auto;
+                @media (max-width: 980px) {
+                    width: 90%;
+                    
+                }
                 svg{
                     padding: 5px 10px;
                     display: flex;
@@ -60,8 +87,7 @@
                     outline: none;
                     border-radius: 0;
                     border: none;
-                    // padding: 0px 20px;
-                    width: 500px;
+                    width: 100%;
                     font-size: 14px;
                 }
 
@@ -82,6 +108,11 @@
                 text-decoration: none;
                 color: white;
                 padding: 0 10px;
+                &.account__icon, &.reorder__icon{
+                    @media (max-width: 980px ) {
+                        display: none;
+                    }
+                }
 
                 svg{
                     font-weight: 300;
